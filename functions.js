@@ -20,11 +20,12 @@
  */
 
  function sumOdds(numbers) {
-   let x=0;
+   let sum=0;
   let oddNum = numbers.filter((num) => num % 2 !== 0);
-  return oddNum.map((num) => num);
+   oddNum.forEach(num => {sum += num;});
+  return sum;
   }
-  
+
     // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
     
     /**
