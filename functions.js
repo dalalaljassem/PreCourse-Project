@@ -18,12 +18,14 @@
  * sumOdds([1, 2, 3, 4, 5, 6, 7, 8, 9]) -> 25
  * sumOdds([3, 7, 8, 15, 2, 1, 13]) -> 39
  */
+
  function sumOdds(numbers) {
+   let x=0;
   let oddNum = numbers.filter((num) => num % 2 !== 0);
-  return oddNum.map((num) => num + num);
+  return oddNum.map((num) => num);
   }
   
-    console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
+    // console.log(sumOdds([3, 7, 8, 15, 2, 1, 13]));
     
     /**
      * characterCount(string, c):
@@ -44,7 +46,7 @@
       const stringArray = string.split(ch).length;
       console.log(stringArray);
     }
-    console.log(characterCount("Character Count is clever", "c"));
+    // console.log(characterCount("Character Count is clever", "c"));
     
     /**
      * largestIncrement(numbers):
@@ -82,7 +84,7 @@
     function afterX(numbers, x) {
       console.log(numbers.slice(x));
     }
-    console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+    // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
     
     /**
      * abbreviate(firstName, lastName):
@@ -119,7 +121,7 @@
       }
     }
     
-    console.log(isUpperCase("JCREW"));
+    // console.log(isUpperCase("JCREW"));
     /**
      * elementInArray(numbers, x):
      * - receives an array of numbers, and a number `x`.
@@ -133,7 +135,7 @@
     function elementInArray(numbers, x) {
       console.log(numbers.includes(x)); //return true
     }
-    console.log(elementInArray([5, 6, 7], 8));
+    // console.log(elementInArray([5, 6, 7], 8));
     
     module.exports = {
       sumOdds,
