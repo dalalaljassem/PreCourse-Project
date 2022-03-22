@@ -80,9 +80,9 @@
      * afterX([11, 35, 52, 14, 56, 601, 777, 888, 999], 52) -> [14, 56, 601, 777, 888, 999]
      */
     function afterX(numbers, x) {
-      // Your code here
+      console.log(numbers.slice(x));
     }
-    // console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
+    console.log(afterX([1, 2, 3, 4, 5, 6, 7, 8, 9], 3));
     
     /**
      * abbreviate(firstName, lastName):
@@ -96,7 +96,8 @@
      * Hint: Use string method .toUpperCase()
      */
     function abbreviate(firstName, lastName) {
-      // Your code here
+    let str =[firstName,lastName];
+    console.log(str);
     }
     // console.log(abbreviate("miss", "Stephane"));
     

@@ -31,14 +31,13 @@ console.log(generateIntegersArray(3, 7));
  *
  */
 function noZeroes(numberString) {
-  while (numberString.startsWith("0")) {
+  if (numberString.startsWith("0")) {
     numberString.slice(0, -1);
-  }
-
-while (numberString.endswith("0"){
+  }else if (numberString.endswith("0")){
     numberString.slice[1];
   }
-  numberString;
+  else{
+     numberString;}
 }
 
 console.log(noZeroes("001100"));
