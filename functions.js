@@ -111,11 +111,14 @@
      *
      */
     function isUpperCase(string) {
-      // Your code here
+      if (string.toUpperCase() === string) {
+      return true;
+      } else {
+        return false;
+      }
     }
     
-    // console.log(isUpperCase("JCREW"));
-    
+    console.log(isUpperCase("JCREW"));
     /**
      * elementInArray(numbers, x):
      * - receives an array of numbers, and a number `x`.
@@ -127,9 +130,9 @@
      *
      */
     function elementInArray(numbers, x) {
-      // Your code here
+      console.log(numbers.includes(x)); //return true
     }
-    // console.log(elementInArray([5, 6, 7], 8));
+    console.log(elementInArray([5, 6, 7], 8));
     
     module.exports = {
       sumOdds,
